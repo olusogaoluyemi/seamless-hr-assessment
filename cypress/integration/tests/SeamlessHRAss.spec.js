@@ -2,13 +2,13 @@
 
 describe("SeamlessHR Assessment", ()=>{
 
-    //Landing Page
-    it("Test valid Login with valid credentials", () => {
+    //Landing Page Of Seamless HR
+    it("Test valid Login using valid credentials", () => {
         cy.visit("https://the-internet.herokuapp.com/")
         cy.wait(5000);
         cy.get(':nth-child(21) > a').click()
 
-        //Login page
+    //Login page page is displayed
         cy.wait(3000);
         cy.get('h2').contains("Login Page")
 
@@ -19,7 +19,7 @@ describe("SeamlessHR Assessment", ()=>{
 
         cy.wait(3000);
         cy.get('#flash').contains("You logged into a secure area!")
-         //Click Logout Button
+     //Click Logout Button
          cy.get('.button').click()
        
     })
@@ -77,3 +77,9 @@ it("Test Invalid Login with InValid User with valid Password", () => {
 
     })
 })
+
+
+
+
+
+
